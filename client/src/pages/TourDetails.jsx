@@ -5,6 +5,7 @@ import tourData from '../assets/data/tours'
 import {Col, Container, Form, ListGroup, Row} from "reactstrap";
 import calculateAvgRating from "../utils/avgRating";
 import avatar from "../assets/images/avatar.jpg"
+import Booking from "../components/Booking/Booking";
 
 const TourDetails = () => {
 
@@ -34,7 +35,6 @@ const TourDetails = () => {
         e.preventDefault()
         const reviewText = reviewMsgRef.current.value;
 
-        alert(`${reviewText}, ${tourRating}`);
     }
 
     return <>
@@ -58,7 +58,7 @@ const TourDetails = () => {
                                         className="ri-star-s-fill"
                                        style={{ color: "var(--secondary-color)"}}
                                     ></i>
-                                   {calculateAvgRating() === 0 ? null :
+                                   {avgRating === 0 ? null :
                                        avgRating}
                                    {totalRating === 0 ? (
                                        'Not Rated'
@@ -158,6 +158,11 @@ const TourDetails = () => {
                         </div>
                         {/* ================ tour reviews section end ================= */}
                     </div>
+                </Col>
+
+                <Col lg="4">
+                    <Booking tour={tour} avgRating={avgRating} />
+
                 </Col>
             </Row>
         </Container>
