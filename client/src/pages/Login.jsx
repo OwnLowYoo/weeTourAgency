@@ -57,7 +57,7 @@ const Login = () => {
                                  <Button className="btn secondary__btn auth__btn"
                                  type="submit">Login</Button>
                              </Form>
-                             <p>Don't have an account? <Link to='register'>Create</Link></p>
+                             <p>Don't have an account? <Link to='/register'>Create</Link></p>
                          </div>
                      </div>
                  </Col>
