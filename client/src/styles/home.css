@@ -72,8 +72,8 @@
 }
 
 .counter__box span {
-    width: 70px;
-    height: 70px;
+    width: 85px;
+    height: 85px;
     margin: auto;
     display: flex;
     align-items: center;

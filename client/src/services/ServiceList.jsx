@@ -9,17 +9,17 @@ import {Col} from "reactstrap";
 const servicesData = [
     {
         imgUrl: weatherImg,
-        title: "Calculate Weather",
+        title: "Расчитаем погоду",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     },
     {
         imgUrl: guideImg,
-        title: "Best Tour Guide",
+        title: "Лучший гид по турам",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     },
     {
         imgUrl: customizationImg,
-        title: "Customization",
+        title: "Кастомизация",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     },
 ]

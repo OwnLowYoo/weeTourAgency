@@ -28,8 +28,8 @@ const SearchBar = () => {
                             <i className= "ri-map-pin-line"></i>
                         </span>
                         <div>
-                            <h6>Location</h6>
-                            <input type = "text" placeholder="Where are you going?" ref={locationRef}/>
+                            <h6>Локация</h6>
+                            <input type = "text" placeholder="Куда отправимся?" ref={locationRef}/>
                         </div>
                     </FormGroup>
                     <FormGroup className="d-flex gap-3 form__group form__group-fast">
@@ -37,8 +37,8 @@ const SearchBar = () => {
                             <i className= "ri-map-pin-time-line"></i>
                         </span>
                         <div>
-                            <h6>Distance</h6>
-                            <input type = "number" placeholder="Distance k/m" ref={distanceRef}/>
+                            <h6>Расстояние</h6>
+                            <input type = "number" placeholder="Расстояние k/m" ref={distanceRef}/>
                         </div>
                     </FormGroup>
                     <FormGroup className="d-flex gap-3 form__group form__group-last">
@@ -46,7 +46,7 @@ const SearchBar = () => {
                             <i className= "ri-group-line"></i>
                         </span>
                         <div>
-                            <h6>Max People</h6>
+                            <h6>Людей</h6>
                             <input type = "number" placeholder="0" ref={maxGroupSizeRef}/>
                         </div>
                     </FormGroup>

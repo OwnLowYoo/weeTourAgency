@@ -37,13 +37,13 @@ const Register = () => {
                                 <div className="user">
                                     <img src={userIcon} alt=""/>
                                 </div>
-                                <h2>Register</h2>
+                                <h2>Регистрация</h2>
 
                                 <Form onSubmit={handleClick}>
                                     <FormGroup>
                                         <input
                                             type="text"
-                                            placeholder="Username"
+                                            placeholder="Никнейм"
                                             required
                                             id="username"
                                             onChange={handleChange} />
@@ -59,15 +59,15 @@ const Register = () => {
                                     <FormGroup>
                                         <input
                                             type="password"
-                                            placeholder="Password"
+                                            placeholder="Пароль"
                                             required
                                             id="password"
                                             onChange={handleChange} />
                                     </FormGroup>
                                     <Button className="btn secondary__btn auth__btn"
-                                            type="submit">Create Account</Button>
+                                            type="submit">Создать аккаунт</Button>
                                 </Form>
-                                <p>Already have an account? <Link to='/login'>Login</Link></p>
+                                <p>Уже есть аккаунт? <Link to='/login'>Войти</Link></p>
                             </div>
                         </div>
                     </Col>

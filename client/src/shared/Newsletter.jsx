@@ -10,10 +10,10 @@ const Newsletter = () => {
             <Row>
                 <Col lg = '6'>
                     <div className="newsletter__content">
-                        <h2>Subscribe now to get useful traveling information.</h2>
+                        <h2>Подпишитесь на нас чтоб получать полезную информацию.</h2>
                         <div className="newsletter__input">
-                            <input type="email" placeholder='Enter your email'/>
-                            <button className="btn newsletter_btn">Subscribe</button>
+                            <input type="email" placeholder='Введите свой email'/>
+                            <button className="btn newsletter_btn">Подписаться</button>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna

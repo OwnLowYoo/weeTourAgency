@@ -51,8 +51,8 @@ const Testimonials = () => {
                 <div className="d-flex align-items-center gap-4 mt-3">
                     <img src = {ava01} className="w-25 h-25 rounded-2" alt="" />
                     <div>
-                        <h6 className="mb-0 mt-3">Mark Bullah</h6>
-                        <p>Customer</p>
+                        <h6 className="mb-0 mt-3">Марк Буллах</h6>
+                        <p>Клиент</p>
                     </div>
                 </div>
             </div>
@@ -70,8 +70,8 @@ const Testimonials = () => {
                 <div className="d-flex align-items-center gap-4 mt-3">
                     <img src = {ava02} className="w-25 h-25 rounded-2" alt="" />
                     <div>
-                        <h6 className="mb-0 mt-3">Mia Franklin</h6>
-                        <p>Customer</p>
+                        <h6 className="mb-0 mt-3">Мия Врац</h6>
+                        <p>Клиент</p>
                     </div>
                 </div>
             </div>
@@ -89,8 +89,8 @@ const Testimonials = () => {
                 <div className="d-flex align-items-center gap-4 mt-3">
                     <img src = {ava03} className="w-25 h-25 rounded-2" alt="" />
                     <div>
-                        <h6 className="mb-0 mt-3">Alexandr Mcnaggets</h6>
-                        <p>Customer</p>
+                        <h6 className="mb-0 mt-3">Александр Макдок</h6>
+                        <p>Клиент</p>
                     </div>
                 </div>
             </div>
@@ -108,8 +108,8 @@ const Testimonials = () => {
                 <div className="d-flex align-items-center gap-4 mt-3">
                     <img src = {ava03} className="w-25 h-25 rounded-2" alt="" />
                     <div>
-                        <h6 className="mb-0 mt-3">John Doe</h6>
-                        <p>Customer</p>
+                        <h6 className="mb-0 mt-3">Глеб Кацко</h6>
+                        <p>Клиент</p>
                     </div>
                 </div>
             </div>

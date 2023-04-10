@@ -62,7 +62,7 @@ const TourDetails = () => {
                                    {avgRating === 0 ? null :
                                        avgRating}
                                    {totalRating === 0 ? (
-                                       'Not Rated'
+                                       'Нет рейтинга'
                                    ):(
                                        <span>({reviews?.length})</span>
                                    )}
@@ -79,22 +79,22 @@ const TourDetails = () => {
                                 </span>
                                 <span>
                                     <i className="ri-money-dollar-circle-line"></i>${price}
-                                /per person
+                                /с человека
                                 </span>
                                 <span>
                                     <i className="ri-map-pin-time-line"></i> {distance} k/m
                                 </span>
                                 <span>
-                                    <i className="ri-group-line"></i>{maxGroupSize} people
+                                    <i className="ri-group-line"></i>{maxGroupSize} человек
                                 </span>
                             </div>
-                            <h5>Description</h5>
+                            <h5>Описание</h5>
                             <p>{desc}</p>
                         </div>
 
                         {/* ================ tour reviews section start ================= */}
                         <div className="tour__reviews mt-4">
-                            <h4>Reviews ({reviews?.length} reviews)</h4>
+                            <h4>Отзывы: {reviews?.length}</h4>
 
                             <Form onSubmit ={submitHandler}>
                                 <div className="d-flex align-items-center gap-3 mb-4 rating__group">
@@ -117,7 +117,7 @@ const TourDetails = () => {
 
                                 <div className="review__input">
                                     <input type="text" ref={reviewMsgRef}
-                                    placeholder="share your thoughts"
+                                    placeholder="...поделитесь своими впечатлениями..."
                                     required
                                     />
                                     <button
@@ -125,7 +125,7 @@ const TourDetails = () => {
                                     type="submit"
 
                                     >
-                                        Submit
+                                        Отправить
                                     </button>
                                 </div>
                             </Form>
@@ -139,7 +139,7 @@ const TourDetails = () => {
                                             <div className="w-100">
                                                 <div className="d-flex align-items-center justify-content-between">
                                                     <div>
-                                                        <h5>muhib</h5>
+                                                        <h5>Глеб</h5>
                                                         <p>{new Date('01-18-2023').toLocaleDateString(
                                                             'en-US', options
                                                         )}
@@ -150,7 +150,7 @@ const TourDetails = () => {
                                                     </span>
                                                 </div>
 
-                                                <h6>Amazing tour</h6>
+                                                <h6>Невероятный тур</h6>
                                             </div>
                                         </div>
                                     ))

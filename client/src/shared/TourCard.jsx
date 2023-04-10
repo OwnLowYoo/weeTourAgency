@@ -15,7 +15,7 @@ const TourCard = ({tour}) => {
             <Card>
                 <div className="tour__img">
                     <img src = {photo} alt = "tour_img" />
-                    {featured && <span>Featured</span>}
+                    {featured && <span>Популярные</span>}
                 </div>
                 <CardBody>
                     <div className="card__top d-flex align-items-center
@@ -26,7 +26,7 @@ const TourCard = ({tour}) => {
                         <span className="tour__rating d-flex align-items-center gap-1">
                         <i className="ri-star-s-fill"></i> {avgRating === 0 ? null : avgRating}
                             {totalRating === 0 ? (
-                                'Not Rated'
+                                'Нет рейтинга'
                             ):(
                                 <span>({reviews.length})</span>
                             )}
@@ -40,11 +40,11 @@ const TourCard = ({tour}) => {
                     <div className="card__bottom d-flex align-items-center
                 justify-content-between mt-3">
                         <h5>
-                            ${price} <span> /per person</span>
+                            ${price} <span> /с человека</span>
                         </h5>
 
                         <button className="btn booking__btn">
-                            <Link to = {`/tours/$/{id}`}>Book Now</Link>
+                            <Link to = {`/tours/$/{id}`}>Купить</Link>
                         </button>
                     </div>
                 </CardBody>

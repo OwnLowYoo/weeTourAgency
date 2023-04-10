@@ -35,7 +35,7 @@ const Booking = ({tour,avgRating}) => {
         <div className="booking">
             <div className="booking__top d-flex align-items-center justify-content-between">
                 <h3>
-                    ${price} <span>/per person</span>
+                    ${price} <span>/с человека</span>
                 </h3>
                 <span className="tour__rating d-flex align-items-center ">
                     <i className="ri-star-s-fill"></i>
@@ -46,18 +46,18 @@ const Booking = ({tour,avgRating}) => {
 
             {/* ============= booking form start =============*/}
             <div className="booking__form">
-                <h5>Information</h5>
+                <h5>Информация</h5>
                 <Form className="booking__info-form" onSubmit={handleClick}>
                     <FormGroup>
                         <input type="text"
-                               placeholder="Full Name"
+                               placeholder="ФИО"
                                id="fullName"
                                required
                                onChange={handleChange} />
                     </FormGroup>
                     <FormGroup>
                         <input type="number"
-                               placeholder="Phone"
+                               placeholder="Номер телефона"
                                id="phone"
                                required
                                onChange={handleChange} />
@@ -71,7 +71,7 @@ const Booking = ({tour,avgRating}) => {
                             onChange={handleChange} />
                         <input
                             type="number"
-                            placeholder="Guest"
+                            placeholder="Людей"
                             id="guestSize"
                             required
                             onChange={handleChange} />
@@ -85,21 +85,21 @@ const Booking = ({tour,avgRating}) => {
                 <ListGroup>
                     <ListGroupItem className="border-0 px-0">
                         <h5 className="d-flex align-items-center gap-1">
-                            {price} <i className="ri-close-line"></i> 1 person
+                            {price} <i className="ri-close-line"></i> 1 человек
                         </h5>
                         <span>${price}</span>
                     </ListGroupItem>
                     <ListGroupItem className="border-0 px-0">
-                        <h5>Service charge</h5>
+                        <h5>Обслуживание</h5>
                         <span> ${serviceFee}</span>
                     </ListGroupItem>
                     <ListGroupItem className="border-0 px-0 total">
-                        <h5>Total</h5>
+                        <h5>Итог</h5>
                         <span>${totalAmount}</span>
                     </ListGroupItem>
                 </ListGroup>
 
-                <Button className="btn primary__btn w-100 mt-4" onClick={handleClick}>Book Now</Button>
+                <Button className="btn primary__btn w-100 mt-4" onClick={handleClick}>Купить</Button>
             </div>
 
 

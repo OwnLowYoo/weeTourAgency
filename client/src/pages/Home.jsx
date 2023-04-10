@@ -27,11 +27,11 @@ const Home = () => {
                <Col lg='6'>
                <div className="hero__content">
                    <div className="hero__subtitle d-flex align-items-center">
-                   <Subtitle subtitle={'Know Before You Go'}/>
+                   <Subtitle subtitle={'Знай, прежде чем отправишься'}/>
                    <img src={worldImg} alt = "" />
                </div>
-                   <h1>Travelling opens the door to creating
-                   <span className="highlight"> memories</span>
+                   <h1>Путешествия открывают двери для создания
+                   <span className="highlight"> воспоминаний</span>
                    </h1>
                    <p>
                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -69,8 +69,8 @@ const Home = () => {
                 <Container>
                 <Row>
                     <Col lg='3'>
-                        <h5 className="services__subtitle">What we serve</h5>
-                        <h2 className="services__title">We offer our best services</h2>
+                        <h5 className="services__subtitle">С чем мы помогаем</h5>
+                        <h2 className="services__title">Мы предлагаем наши лучшие услуги</h2>
                     </Col>
                     <ServiceList />
                 </Row>
@@ -82,8 +82,8 @@ const Home = () => {
                 <Container>
                     <Row>
                         <Col lg="12" className="mb-5">
-                            <Subtitle subtitle={"Explore"} />
-                            <h2 className="featured__tour-title">Our featured tours</h2>
+                            <Subtitle subtitle={"Изучите"} />
+                            <h2 className="featured__tour-title">Наши популярные туры</h2>
                         </Col>
                         <FeaturedTourList />
                     </Row>
@@ -97,10 +97,10 @@ const Home = () => {
                     <Row>
                         <Col lg="6">
                             <div className="experience__content">
-                                <Subtitle subtitle={"Experience"} />
+                                <Subtitle subtitle={"Опыт"} />
 
                                 <h2>
-                                    With our all experience <br/> we will serve you
+                                    Используя весь наш опыт <br/> мы обслужим вас
                                 </h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -111,16 +111,16 @@ const Home = () => {
 
                             <div className="counter__wrapper d-flex align-items-center gap-5">
                                 <div className="counter__box">
-                                    <span>12k+</span>
-                                    <h6>Successful trip</h6>
+                                    <span>12тыс+</span>
+                                    <h6>Успешных туров</h6>
                                 </div>
                             <div className="counter__box">
-                                    <span>2k+</span>
-                                    <h6>Regular clients</h6>
+                                    <span>2тыс+</span>
+                                    <h6>Постоянных клиентов</h6>
                                 </div>
                             <div className="counter__box">
                                     <span>15</span>
-                                    <h6>Years experience</h6>
+                                    <h6>Лет опыта</h6>
                                 </div>
                             </div>
                         </Col>
@@ -139,9 +139,9 @@ const Home = () => {
                 <Container>
                     <Row>
                         <Col lg="12">
-                            <Subtitle subtitle={'Gallery'}/>
+                            <Subtitle subtitle={'Галерея'}/>
                             <h2 className="gallery__title">
-                                Visit our customers tour gallery
+                                Посетите галерею экскурсий наших клиентов
                             </h2>
                         </Col>
                         <Col lg='12'>
@@ -156,8 +156,8 @@ const Home = () => {
             <section>
                 <Container>
                     <Col lg = '12'>
-                        <Subtitle subtitle={'Fans Love'} />
-                        <h2 className="testimonial__title">What our fans say about us</h2>
+                        <Subtitle subtitle={'Фанаты любят нас'} />
+                        <h2 className="testimonial__title">Что говорят о нас наши фанаты</h2>
                     </Col>
                     <Col lg='12'>
                         <Testimonials />
