@@ -8,15 +8,15 @@ import logo from '../../assets/images/logo.png'
 const nav_links = [
     {
         path:'/home',
-        display:'Домой'
+        display:'ДОМОЙ'
     },
     {
         path:'/about',
-        display:'Мы'
+        display:'КОМПАНИЯ'
     },
     {
         path:'/tours',
-        display:'Туры'
+        display:'ТУРЫ'
     },
 ];
 
@@ -48,7 +48,9 @@ const Header = () => {
                    justify-content-between">
                         {/* =========== logo =========== */}
                         <div className="logo">
+                            <Link to="/home">
                             <img src={logo} alt=""/>
+                                </Link>
                         </div>
                         {/* =========== logo end =========== */}
 

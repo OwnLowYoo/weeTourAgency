@@ -1,0 +1,30 @@
+.paragraph{
+    text-align: center
+}
+
+.span__title {
+    font-size: 26pt;
+    color: #000000;
+}
+
+.span__title2{
+    font-size: 13pt
+}
+
+.span__text{
+    color: #000000;
+    font-size: 16pt;
+}
+
+.span__text2{
+    color: #000000;
+    font-size: 20pt;
+}
+
+.paragraph__text{
+    font-size: 16pt;
+}
+
+.paragraph__text2{
+    font-size: 14pt;
+}

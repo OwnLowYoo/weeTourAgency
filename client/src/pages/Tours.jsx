@@ -20,7 +20,7 @@ const Tours = () => {
 
     return (
         <>
-        <CommonSection title = {"Все туры"} />
+        <CommonSection title = {"ТУРЫ"} />
             <section>
                 <Container>
                     <Row>
