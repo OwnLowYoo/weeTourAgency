@@ -64,6 +64,14 @@ const Register = () => {
                                             id="password"
                                             onChange={handleChange} />
                                     </FormGroup>
+                                    <FormGroup>
+                                        <input
+                                            type="password"
+                                            placeholder="Повторите пароль"
+                                            required
+                                            id="password"
+                                            onChange={handleChange} />
+                                    </FormGroup>
                                     <Button className="btn secondary__btn auth__btn"
                                             type="submit">Создать аккаунт</Button>
                                 </Form>

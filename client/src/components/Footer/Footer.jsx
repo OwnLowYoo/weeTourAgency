@@ -52,16 +52,16 @@ const Footer = () => {
 
                             <div className="social__links d-flex align-items-center gap-4">
                             <span>
-                                <Link to='#'><i className="ri-youtube-line"></i> </Link>
+                                <Link to='https://www.youtube.com/channel/UCZhEDf9JVF4qylAfZ1aZoeA' target="_blank"><i className="ri-youtube-line"></i> </Link>
                             </span>
                                 <span>
-                                <Link to='#'><i className="ri-github-fill"></i> </Link>
+                                <Link to='https://github.com/OwnLowYoo' target="_blank"><i className="ri-github-fill"></i> </Link>
                             </span>
                                 <span>
-                                <Link to='#'><i className="ri-facebook-circle-line"></i> </Link>
+                                <Link to='https://www.facebook.com/gleb.katsko/' target="_blank"><i className="ri-facebook-circle-line"></i> </Link>
                             </span>
                                 <span>
-                                <Link to='#'><i className="ri-instagram-line"></i> </Link>
+                                <Link to='https://www.instagram.com/kck.glb_/' target="_blank"><i className="ri-instagram-line"></i> </Link>
                             </span>
                             </div>
                         </div>
