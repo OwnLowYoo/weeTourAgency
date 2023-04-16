@@ -48,18 +48,65 @@ export const updateTour = async (req, res) => {
 
 //delete tour
 export const deleteTour = async (req, res) => {
+    const id = req.params.id;
+
     try {
-    }catch (err){}
+        await Tour.findByIdAndDelete(id)
+        res.status(200).json({
+            success: true,
+            message: "Successfully deleted",
+        });
+
+    } catch (err) {
+        res.status(500).json({
+            success: false,
+            message: "Failed to delete",
+        });
+    }
 };
 
 //getSingle tour
 export const getSingleTour = async (req, res) => {
+    const id = req.params.id;
+
     try {
-    }catch (err){}
+        const tour = await Tour.findById(id)
+        res.status(200).json({
+            success: true,
+            message: "Successfully found single tour",
+            data:tour
+        });
+
+    } catch (err) {
+        res.status(404).json({
+            success: false,
+            message: "Not found",
+        });
+    }
 };
 
 //getAll tour
 export const getAllTour = async (req, res) => {
+
+    //for pagination
+    const page = parseInt(req.query.page)
+
     try {
-    }catch (err){}
+        const tours = await Tour.find({})
+            .skip(page * 8)
+            .limit(8);
+
+        res.status(200).json({
+            success: true,
+            count: tours.length,
+            message: "Successfully found all tours",
+            data: tours
+        });
+
+    } catch (err) {
+        res.status(404).json({
+            success: false,
+            message: "Not found",
+        });
+    }
 };
