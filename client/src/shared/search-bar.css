@@ -4,6 +4,7 @@
     box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
     width: max-content;
     margin-top: 50px;
+
 }
 
 .form__group span{
@@ -16,10 +17,16 @@
     font-size: 0.9rem;
     color: var(--heading-color);
     font-weight: 500;
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 150px;
+
 }
 
 .form__group input:focus {
     outline: none;
+
+
 }
 
 .form__group h6 {
