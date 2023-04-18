@@ -123,7 +123,6 @@ const TourDetails = () => {
                                     <button
                                     className="btn primary__btn text-white"
                                     type="submit"
-
                                     >
                                         Отправить
                                     </button>
@@ -149,7 +148,6 @@ const TourDetails = () => {
                                                         5<i className="ri-star-s-fill"></i>
                                                     </span>
                                                 </div>
-
                                                 <h6>Невероятный тур</h6>
                                             </div>
                                         </div>

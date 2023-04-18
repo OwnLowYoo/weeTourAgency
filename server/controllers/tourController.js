@@ -110,3 +110,29 @@ export const getAllTour = async (req, res) => {
         });
     }
 };
+
+export const getTourBySearch = async (req,res) => {
+
+    const city = new RegExp(req.query.city, 'i');
+    const distance = parseInt(req.query.distance);
+    const maxGroupSize = parseInt(req.query.maxGroupSize)
+
+    try{
+
+        const tours = await Tour.find({ city, distance:{$gte:distance},
+            maxGroupSize:{$gte: maxGroupSize}})
+
+        res.status(200).json({
+            success: true,
+            message: "Successfully found searched tour",
+            data: tours
+        });
+
+    }catch (err){
+        res.status(404).json({
+            success: false,
+            message: "Not found",
+        });
+    }
+
+}
