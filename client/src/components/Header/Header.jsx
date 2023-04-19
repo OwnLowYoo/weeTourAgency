@@ -18,6 +18,10 @@ const nav_links = [
         path:'/tours',
         display:'ТУРЫ'
     },
+    {
+        path:'/cart',
+        display:'КОРЗИНА'
+    },
 ];
 
 const Header = () => {

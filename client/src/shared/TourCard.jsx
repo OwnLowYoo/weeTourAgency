@@ -44,7 +44,7 @@ const TourCard = ({tour}) => {
                         </h5>
 
                         <button className="btn booking__btn">
-                            <Link to = {`/tours/$/{id}`}>Купить</Link>
+                            <Link to = {`/tours/$/{id}`}>В корзину</Link>
                         </button>
                     </div>
                 </CardBody>

@@ -99,7 +99,7 @@ const Booking = ({tour,avgRating}) => {
                     </ListGroupItem>
                 </ListGroup>
 
-                <Button className="btn primary__btn w-100 mt-4" onClick={handleClick}>Купить</Button>
+                <Button className="btn primary__btn w-100 mt-4" onClick={handleClick}>В корзину</Button>
             </div>
 
 
