@@ -1,0 +1,94 @@
+.tour__card2 {
+    width: 80%;
+    float: left;
+    margin-right: 2rem;
+}
+.card__info2 {
+    width: 1500px;
+}
+
+.tour__title2 {
+    margin: auto;
+}
+
+.card__top2 span i{
+    color: var(--secondary-color);
+}
+
+.tour__rating2{
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.tour__location2 {
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.tour__rating2 i,
+.tour__location2 i{
+    font-size: 2rem;
+}
+
+.tour__title2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    cursor:pointer;
+}
+
+.tour__title2 a{
+    text-decoration: none;
+    color: var(--heading-color);
+    transition: 0.3s;
+}
+
+.tour__title2 a:hover {
+    color: var(--secondary-color)
+}
+
+.card__bottom2 h5{
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.card__bottom2 h5 {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-right: 300px;
+    margin-top: 9px;
+}
+
+.tour__img2{
+    position: relative;
+}
+
+.tour__img2 span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: max-content;
+    height: max-content;
+    z-index:10;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px 0 0 0 ;
+}
+
+.tour__img2 img{
+    width: 300px;
+    border-radius: 5px 5px 0 0;
+}
+
+.tour__rating2 {
+    margin-right: 100px;
+    padding-top: 20px;
+}
+
+.tour__location2 {
+    margin-left: 100px;
+}
+
