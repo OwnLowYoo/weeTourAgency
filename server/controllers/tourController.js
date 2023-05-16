@@ -155,3 +155,13 @@ export const getFeaturedTour = async (req, res) => {
         });
     }
 };
+
+//get tour counts
+export const getTourCount = async (req,res) => {
+    try {
+        const tourCount = await Tour.estimatedDocumentCount();
+        res.status(200).json({ success: true, data: tourCount });
+    } catch (err){
+        res.status(500).json({ success: false, message: "Failed to fetch"})
+    }
+}
