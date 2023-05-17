@@ -111,6 +111,7 @@ export const getAllTour = async (req, res) => {
     }
 };
 
+// get tour by search
 export const getTourBySearch = async (req,res) => {
 
     const city = new RegExp(req.query.city, 'i');
