@@ -2,20 +2,35 @@ import React, {useRef} from 'react';
 import './search-bar.css'
 import {Col, Form, FormGroup} from "reactstrap";
 
+import { BASE_URL } from "../utils/config";
+
+import { useNavigate } from "react-router-dom";
+
 const SearchBar = () => {
 
     const locationRef = useRef('')
-    const dateRef = useRef(0)
+    const distanceRef = useRef(0)
     const maxGroupSizeRef = useRef(0)
+    const navigate = useNavigate()
 
-    const searchHandler = () => {
+    const searchHandler = async () => {
         const location = locationRef.current.value
-        const date = dateRef.current.value
+        const distance = distanceRef.current.value
         const maxGroupSize = maxGroupSizeRef.current.value
 
-        if(location === ''|| date === '' || maxGroupSize === ''){
+        if(location === ''|| distance === '' || maxGroupSize === ''){
             return alert ('All fields are required!')
         }
+
+        const res = await fetch(`${BASE_URL}/tours/search/getTourBySearch?city=
+        ${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`)
+
+        if(!res.ok) alert('Something went wrong')
+
+        const result = await res.json()
+
+        navigate(`/tours/search/getTourBySearch?city=
+        ${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`, {state: result.data})
     }
 
 
@@ -44,9 +59,9 @@ const SearchBar = () => {
                             <i className= "ri-calendar-line"></i>
                         </span>
                         <div>
-                            <input type="text" placeholder="Когда" ref={dateRef}
-                                   onFocus={(e) => e.target.type = 'date'}
-                                   onBlur={(e) => e.target.type = 'text'}/>
+                            <input type="text" placeholder="Когда" ref={distanceRef}
+                                   onFocus={(e) => e.target.type = 'integer'}
+                                   onBlur={(e) => e.target.type = 'integer'}/>
                         </div>
                     </FormGroup>
                     <FormGroup className="d-flex gap-3 form__group form__group-fast">
@@ -54,9 +69,9 @@ const SearchBar = () => {
                             <i className="ri-calendar-fill"></i>
                         </span>
                         <div>
-                            <input type="text" placeholder="Обратно" ref={dateRef}
-                                   onFocus={(e) => e.target.type = 'date'}
-                                   onBlur={(e) => e.target.type = 'text'}
+                            <input type="text" placeholder="Обратно" ref={distanceRef}
+                                   onFocus={(e) => e.target.type = 'integer'}
+                                   onBlur={(e) => e.target.type = 'integer'}
                                    defaultChecked="Обратно" />
                         </div>
                     </FormGroup>
