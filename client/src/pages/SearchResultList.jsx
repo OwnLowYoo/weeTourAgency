@@ -16,9 +16,20 @@ const SearchResultList = () => {
 
     return (
         <>
-        <CommonSection title = {"Tour Search Result"} />
+        <CommonSection title = {"РЕЗУЛЬТАТЫ ПОИСКА"} />
             <section>
                 <Container>
+                    <Row>
+                        {data.length === 0 ? (
+                            <h4 className="text-center">Туры не найдены</h4>
+                        ) : (
+                            data ?.map(tour =>(
+                                <Col lg="3" className="mb-4" key={tour._id}>
+                                    <TourCard tour={tour}/>
+                                </Col>
+                            ))
+                        )}
+                    </Row>
 
                 </Container>
             </section>

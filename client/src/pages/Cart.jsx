@@ -20,7 +20,7 @@ const Cart = () => {
             <section className="pt-0">
                 <Container>
                     <Row>
-                        {tourData?.map(tour => (
+                        {tourData ?.map(tour => (
                             <Col lg="12" className="mb-4" key={tour.id}>
                                 <TourCardCart tour={tour} className="tour__card2" />
                             </Col>
